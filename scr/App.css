@@ -1,0 +1,139 @@
+/* App.css */
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to bottom right, #B2BA97, #52e0fd);
+  color: #f8fafc;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.App {
+  width: 100%;
+  max-width: 1200px;
+  background: #E9CECE;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.status-panel, .status-indicators {
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 12px;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.1rem;
+}
+
+button {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  margin: 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2563eb;
+}
+
+button:disabled {
+  background-color: #475569;
+  cursor: not-allowed;
+}
+
+.video-container {
+  position: relative;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+video {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 12px;
+}
+
+.webcam-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.notification {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #dc2626;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.buttons-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.report-container {
+  margin-top: 40px;
+  background: #80d26f;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+  .App {
+    padding: 1rem;
+  }
+
+  button {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .status-panel {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.status-value.happy {
+  color: #22c55e; /* green */
+}
+.status-value.sad {
+  color: #3b82f6; /* blue */
+}
+.status-value.angry {
+  color: #ef4444; /* red */
+}
+.status-value.surprised {
+  color: #f97316; /* orange */
+}
+.status-value.neutral {
+  color: #6b7280; /* gray */
+}
+
